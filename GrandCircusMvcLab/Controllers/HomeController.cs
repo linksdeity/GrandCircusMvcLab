@@ -20,8 +20,6 @@ namespace GrandCircusMvcLab.Controllers
             return View();
         }
 
-
-
         public ActionResult Login(string name, string lastName, string email, string password, string address, bool deluxe = false)
         {
             ViewBag.Name = name + " " + lastName;
@@ -39,14 +37,14 @@ namespace GrandCircusMvcLab.Controllers
         //----------------------------------------------------------------------------------------------------------------------------
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "We sell da beans!";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "For more info...";
 
             return View();
         }
