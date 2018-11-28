@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>Registration</h2>
+
+<p>Please enter the required information below...</p>
+
+<form action="/Home/Login" method="post">
+    <br />
+    <p>FIRST NAME</p>
+    <input type="text" name="name" required />
+    <br /><br />
+    <p>LAST NAME</p>
+    <input type="text" name="lastName" required />
+    <br /><br />
+    <p>EMAIL</p>
+    <input type="email" name="email" required />
+    <br /><br />
+    <p>PASSWORD</p>
+    <input type="text" name="password" style="" required />
+    <br /><br />
+    <p>ADDRESS</p>
+    <input type="text" name="address" required />
+    <br /><br />
+    <p>DELUXE ACCOUNT?</p>
+    <input type="checkbox" name="deluxe" value = "true"  />
+    <br /><br />
+
+
+
+    <input type="submit" class="btn-warning" />
+
+</form>
+

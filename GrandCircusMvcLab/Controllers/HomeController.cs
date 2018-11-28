@@ -13,6 +13,30 @@ namespace GrandCircusMvcLab.Controllers
             return View();
         }
 
+
+
+        public ActionResult Registration()
+        {
+            return View();
+        }
+
+
+
+        public ActionResult Login(string name, string lastName, string email, string password, string address, bool deluxe = false)
+        {
+            ViewBag.Name = name + " " + lastName;
+            ViewBag.Email = email;
+            ViewBag.Password = password;
+            ViewBag.Address = address;
+            ViewBag.Deluxe = deluxe;
+                    
+
+            return View();
+        }
+
+
+
+        //----------------------------------------------------------------------------------------------------------------------------
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
