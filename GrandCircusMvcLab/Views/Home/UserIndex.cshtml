@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "UserIndex";
+}
+
+<h2>UserIndex</h2>
+
+<div>
+    <p>Users...</p>
+    <ul>
+        @foreach (var user in ViewBag.Users)
+        {
+            <li> @user.FirstName  @user.LastName  <br /> Email @user.Email</li>
+        }
+    </ul>
+</div>
